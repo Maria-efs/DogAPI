@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
+}
+
+input{
+    font-size: 2em;
+    display: flex;
+    margin: 15px;
+    text-align: center;
+    height: 3vh;
+    width: 10vw;
+    margin-left: 45%;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 12px;
+    padding: 12px;
+}
+
+#galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
